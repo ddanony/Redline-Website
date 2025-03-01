@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistiques - REDLINE™</title>
+</head>
+<body>
+    <header>
+        REDLINE™ - Statistiques
+    </header>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="description.html">Description</a>
+        <a href="contact.html">Contact</a>
+        <a href="reclamation.html">Réclamations</a>
+    </nav>
+    <div class="container">
+        <h1>Statistiques du Serveur</h1>
+        <p>Nombre de joueurs en ligne : <span id="player-count">Chargement...</span></p>
+        <script>
+            function updateStats() {
+                document.getElementById('player-count').innerText = Math.floor(Math.random() * 100) + " joueurs en ligne";
+            }
+            setInterval(updateStats, 5000);
+            updateStats();
+        </script>
+    </div>
+    <footer>
+        &copy; 2025 REDLINE™ - Tous droits réservés.
+    </footer>
+</body>
+</html>
